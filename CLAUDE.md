@@ -7,7 +7,7 @@
 - Domain: APPNAME.freegamestore.online
 
 ## Tech Stack
-- TypeScript, React 19, Vite 6, Tailwind CSS 4.1, pnpm
+- TypeScript, React 19, Vite 8, Tailwind CSS 4.1, pnpm
 - PixiJS 8 for 2D WebGL rendering
 - No backend (standalone app) — all data in localStorage
 - Must work offline (PWA)

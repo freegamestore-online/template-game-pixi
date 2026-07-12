@@ -7,8 +7,8 @@ export default defineConfig({
   build: {
     rollupOptions: {
       output: {
-        manualChunks: {
-          pixi: ["pixi.js"],
+        advancedChunks: {
+          groups: [{ name: "pixi", test: /node_modules[\\/]pixi\.js/ }],
         },
       },
     },
