@@ -1,6 +1,6 @@
+import { GameShell, GameTopbar } from "@freegamestore/games";
 import { useEffect, useRef } from "react";
 import { Application, Graphics } from "pixi.js";
-import { Shell } from "./components/Shell";
 
 export default function App() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -36,8 +36,8 @@ export default function App() {
   }, []);
 
   return (
-    <Shell>
+    <GameShell topbar={<GameTopbar title="APPNAME" showScore={false} />}>
       <div ref={containerRef} className="w-full h-full" />
-    </Shell>
+    </GameShell>
   );
 }
